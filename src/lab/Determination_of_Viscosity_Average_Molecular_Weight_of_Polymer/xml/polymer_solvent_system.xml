@@ -1,0 +1,165 @@
+<xml>
+<Polymer_Solvent_System>
+<Polymer name="Polyvinyl acetate">
+<solvent name ="Acetonitrile">
+<concentration value="0.02">
+<time>105.82</time>
+</concentration>
+<concentration value="0.04">
+<time>109.46</time>
+</concentration>
+<concentration value="0.06">
+<time>113.28</time>
+</concentration>
+<concentration value="0.08">
+<time>117.43</time>
+</concentration>
+<concentration value="0.1">
+<time>121.35</time>
+</concentration>
+</solvent>
+<solvent name= "Acetone">
+<concentration value="0.02">
+<time>127.15</time>
+</concentration>
+<concentration value="0.04">
+<time>132.49</time>
+</concentration>
+<concentration value="0.06">
+<time>138.1</time>
+</concentration>
+<concentration value="0.08">
+<time>144.05</time>
+</concentration>
+<concentration value="0.1">
+<time>150.01</time>
+</concentration></solvent>
+<solvent name ="Benzene">
+<concentration value="0.02">
+<time>88.6</time>
+</concentration>
+<concentration value="0.04">
+<time>109.84</time>
+</concentration>
+<concentration value="0.06">
+<time>133.76</time>
+</concentration>
+<concentration value="0.08">
+<time>156.45</time>
+</concentration>
+<concentration value="0.1">
+<time>184.46</time>
+</concentration>
+</solvent>
+</Polymer>
+<Polymer name="PMMA">
+<solvent name="Accetone">
+<concentration value="0.02">
+<time>126.46</time>
+</concentration>
+<concentration value="0.04">
+<time>132.39</time>
+</concentration>
+<concentration value="0.06">
+<time>138</time>
+</concentration>
+<concentration value="0.08">
+<time>145.37</time>
+</concentration>
+<concentration value="0.1">
+<time>154.03</time>
+</concentration>
+</solvent>
+<solvent name="Toluene">
+<concentration value="0.02">
+<time>103.29</time>
+</concentration>
+<concentration value="0.04">
+<time>108.59</time>
+</concentration>
+<concentration value="0.06">
+<time>113.82</time>
+</concentration>
+<concentration value="0.08">
+<time>121.14</time>
+</concentration>
+<concentration value="0.1">
+<time>129.04</time>
+</concentration>
+</solvent>
+<solvent name ="Benzene">
+<concentration value="0.02">
+<time>80.66</time>
+</concentration>
+<concentration value="0.04">
+<time>92.17</time>
+</concentration>
+<concentration value="0.06">
+<time>105.32</time>
+</concentration>
+<concentration value="0.08">
+<time>118.61</time>
+</concentration>
+<concentration value="0.1">
+<time>132.25</time>
+</concentration>
+</solvent>
+</Polymer>
+<Polymer name="Polyvinyl alcohol">
+<solvent name ="Water">
+<concentration value="0.02">
+<time>103.27</time>
+</concentration>
+<concentration value="0.04">
+<time>108.01</time>
+</concentration>
+<concentration value="0.06">
+<time>113.16</time>
+</concentration>
+<concentration value="0.08">
+<time>118.58</time>
+</concentration>
+<concentration value="0.1">
+<time>124.67</time>
+</concentration>
+</solvent>
+</Polymer>
+<Polymer name="Polystyrene">
+<solvent name ="Toluene">
+<concentration value="0.02">
+<time>110.69</time>
+</concentration>
+<concentration value="0.04">
+<time>122.51</time>
+</concentration>
+<concentration value="0.06">
+<time>134.94</time>
+</concentration>
+<concentration value="0.08">
+<time>148.48</time>
+</concentration>
+<concentration value="0.1">
+<time>162.42</time>
+</concentration>
+</solvent>
+<solvent name ="Benzene">
+<concentration value="0.02">
+<time>86.70</time>
+</concentration>
+<concentration value="0.04">
+<time>108.16</time>
+</concentration>
+<concentration value="0.06">
+<time>134.21</time>
+</concentration>
+<concentration value="0.08">
+<time>165.08</time>
+</concentration>
+<concentration value="0.1">
+<time>195.23</time>
+</concentration>
+</solvent>
+</Polymer>
+</Polymer_Solvent_System>
+</xml>
+

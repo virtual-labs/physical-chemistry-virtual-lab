@@ -1,0 +1,21 @@
+<xml> 
+<Solvent>
+<sample name="Acetonitrile">
+<time>102.3</time>
+</sample>
+<sample name="Acetone">
+<time>122</time>
+</sample>
+<sample name="Water">
+<time>99</time>
+</sample>
+<sample name="Toluene">
+<time>99.8</time>
+</sample>
+<sample name="Benzene">
+<time>70</time>
+</sample>
+</Solvent>
+</xml>
+
+

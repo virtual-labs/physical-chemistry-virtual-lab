@@ -36,7 +36,7 @@ function directiveFunction(){
 				element[0].offsetHeight = element[0].offsetWidth;
 			}
 			/** Array to store name of images and this array used to load images into preloader */
-			images_array = ["background","thermometer","stirrer","stand_holder","box_top","box_top","box_front","number_popup"];
+			images_array = ["background","thermometer","stirrer","stand_holder","box_top","box_front","number_popup"];
 			exp_canvas = document.getElementById("demoCanvas");
 			exp_canvas.width = element[0].width;
 			exp_canvas.height = element[0].height;            

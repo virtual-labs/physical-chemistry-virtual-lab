@@ -82,7 +82,7 @@
         </md-select>
 
         <!-- Insert slider1 label -->
-        <md-content class="md-title selectable" ng-model="concentration" layout-padding id="concentration">{{concentration_txt}} {{concentration}}</md-content>
+        <md-content class="md-title selectable" ng-model="concentration" layout-padding id="concentration">{{concentration_txt}} {{concentration}} {{unit}}</md-content>
         <!-- Insert slider1 -->
         <div layout>      
             <md-slider flex md-discrete ng-disabled="concentration_disable" ng-change="" ng-model="concentration" step="0.001" min="0.001" max="0.1" aria-label="rating"></md-slider>        

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: d\n"
-"POT-Creation-Date: 2016-11-19 13:51+0530\n"
-"PO-Revision-Date: 2016-11-19 13:51+0530\n"
+"POT-Creation-Date: 2016-12-05 09:58+0530\n"
+"PO-Revision-Date: 2016-12-05 10:01+0530\n"
 "Last-Translator: \n"
 "Language-Team: d\n"
 "Language: hi\n"
@@ -53,49 +53,72 @@ msgstr "First select the solution which you want."
 
 #: view.js:221
 msgid "help2"
-msgstr "Then open the machine top and place the testtube in to the machine."
+msgstr "Select the concentration using slider."
 
 #: view.js:221
 msgid "help3"
-msgstr "If the selected tube is known solution tube, select the concentration."
+msgstr ""
+"Then open the lid of the spectrophotometer and place the blank cuvette by "
+"clicking on it."
 
 #: view.js:221
 msgid "help4"
-msgstr "Then close the machine top."
+msgstr "Close the lid."
 
 #: view.js:221
 msgid "help5"
-msgstr "We can increase the wavelength using the up arrow  button."
+msgstr "Click on 0 ABS 100%T button, the instrument now reads 0.00000 A."
 
 #: view.js:221
 msgid "help6"
-msgstr "Decrease the wavelength using the down arrow  button."
+msgstr "Open the lid and remove the blank cuvette by clicking on it."
 
 #: view.js:221
 msgid "help7"
 msgstr ""
-"We can see the absorbance also in the machine with respect to the wavelength."
+"Then place the cuvette with known concentration in the spectrophotometer."
 
 #: view.js:221
 msgid "help8"
-msgstr "A/T button displays the absorbance and transmittance alternately."
+msgstr "Close the lid and measure the absorbance between 350 nm and 700 nm."
 
 #: view.js:221
 msgid "help9"
-msgstr ""
-"If the selected tube is unknown solution tube, we have to calculate the "
-"concentration."
+msgstr "We can increase/decrease the wavelength using up/down arrow buttons."
 
 #: view.js:221
 msgid "help10"
-msgstr "Then type it on Calculated Concentration text box and submit it."
+msgstr ""
+"We can see the absorbance in the machine with respect to the wavelength."
 
 #: view.js:221
 msgid "help11"
-msgstr "If the selected tube is blank tube, default values will displays."
+msgstr "A/T button displays absorbance and transmittance alternately."
 
 #: view.js:221
 msgid "help12"
+msgstr "Set the wavelength to the value corresponding to maximum absorbance."
+
+#: view.js:221
+msgid "help13"
+msgstr "Open the lid and remove the cuvette with known concentration."
+
+#: view.js:221
+msgid "help14"
+msgstr "Place the cuvette with same solution but at an unknown concentration."
+
+#: view.js:221
+msgid "help15"
+msgstr ""
+"Read the absorbance for this wavelength and calculate the concentration of "
+"the unknown solution."
+
+#: view.js:221
+msgid "help16"
+msgstr "Enter the calculated value in the text box and check your result."
+
+#: view.js:221
+msgid "help17"
 msgstr "Reset button is for resetting the experiment."
 
 #: view.js:221
@@ -118,7 +141,7 @@ msgstr "Variables"
 msgid "Solution"
 msgstr "Solution"
 
-#: view.js:225 view.js:236
+#: view.js:225 view.js:238
 msgid "Cobalt(II) Chloride"
 msgstr "Cobalt(II) Chloride"
 
@@ -134,43 +157,43 @@ msgstr "Reset"
 msgid "Cuvette Length = 1 cm"
 msgstr "Cuvette Length = 1 cm"
 
-#: view.js:229
+#: view.js:231
 msgid "Calculated Concentration"
 msgstr "Calculated Concentration"
 
-#: view.js:230
+#: view.js:232
 msgid "Submit"
 msgstr "Submit"
 
-#: view.js:231
+#: view.js:233
 msgid "Correct Answer"
 msgstr "Correct Answer"
 
-#: view.js:232
+#: view.js:234
 msgid "Result"
 msgstr "Result"
 
-#: view.js:233
+#: view.js:235
 msgid "copyright"
 msgstr "Copyright © Amrita University 2009 - 2015"
 
-#: view.js:239
+#: view.js:241
 msgid "Hexaaquacobalt(II) Ion"
 msgstr "Hexaaquacobalt(II) Ion"
 
-#: view.js:242
+#: view.js:244
 msgid "Ferrocene"
 msgstr "Ferrocene"
 
-#: view.js:245
+#: view.js:247
 msgid "Crystal Violet"
 msgstr "Crystal Violet"
 
-#: view.js:248
+#: view.js:250
 msgid "Rose Bengal"
 msgstr "Rose Bengal"
 
-#: view.js:251
+#: view.js:253
 msgid "Coumarin"
 msgstr "Coumarin"
 

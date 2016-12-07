@@ -6,7 +6,7 @@
 
 var spectrophotometry_stage, exp_canvas, tick; /** Stage, canvas and tick timer for stage updation */
 
-var open_flag, absorbance, transmittance, INITIAL_CONCEN_CONST, known_solution_flag, unknown_solution_flag, blank_flag;
+var open_flag, absorbance, transmittance, INITIAL_CONCEN_CONST, known_solution_flag, unknown_solution_flag, blank_flag, concentration_unit;
 
 var unknown_concentration, solution_in_machine_flag, initial_wavelength, wavelength, index_value, absorbance_flag, transmittance_flag;
 
@@ -24,6 +24,7 @@ var known_solution_rect = new createjs.Shape();
 var unknown_solution_rect = new createjs.Shape();
 var blank_rect = new createjs.Shape();
 var solution_tube_return_rect = new createjs.Shape();
+var machine_value_display_rect = new createjs.Shape();
 
 function directiveFunction() {
 	return {
@@ -183,7 +184,7 @@ function directiveFunction() {
 				/** Text box loading */
 				setText("open_txt", 140, 530, _("Click here to open"), "white", 1, spectrophotometry_stage);
 				setText("close_txt", 158, 180, _("Click here to close"), "white", 1, spectrophotometry_stage);
-				setText("wavelength_value", 360, 352, "350", "black", 1.1, spectrophotometry_stage);
+				setText("wavelength_value", 360, 352, "350 nm", "black", 1.1, spectrophotometry_stage);
 				setText("absorbance_transmittance_value", 360, 372, "0.00000 A", "black", 1.2, spectrophotometry_stage);
 				setText("known_conctrn_txt", 335, 28, _("Known Concentration"), "black", 1, spectrophotometry_stage);
 				setText("unknown_conctrn_txt", 375, 28, _("Unknown Concentration"), "black", 1, spectrophotometry_stage);
@@ -195,6 +196,7 @@ function directiveFunction() {
 				createDynamicRect(known_solution_rect, 480, 35, 22, 85, "pointer");
                 createDynamicRect(unknown_solution_rect, 527, 35, 22, 85, "pointer");
                 createDynamicRect(blank_rect, 572, 35, 22, 85, "pointer");
+                createDynamicRect(machine_value_display_rect, 350, 355, 130, 25, "pointer");
 
 				initialisationOfVariables(); /** Initializing the variables */               
 				initialisationOfImages(); /** Function call for images used in the apparatus visibility */
@@ -218,7 +220,7 @@ function directiveFunction() {
 			/** Add all the strings used for the language translation here. '_' is the short cut for calling the gettext function defined in the gettext-definition.js */
 			function translationLabels() {
 				/** This help array shows the hints for this experiment */
-				help_array = [_("help1"), _("help2"), _("help3"), _("help4"), _("help5"), _("help6"), _("help7"), _("help8"), _("help9"), _("help10"), _("help11"), _("help12"), _("Next"), _("Close")];
+				help_array = [_("help1"), _("help2"), _("help3"), _("help4"), _("help5"), _("help6"), _("help7"), _("help8"), _("help9"), _("help10"), _("help11"), _("help12"), _("help13"), _("help14"), _("help15"), _("help16"), _("help17"), _("Next"), _("Close")];
 				scope.heading = _("Spectrophotometry");
 				scope.variables = _("Variables");
 				scope.solution_txt = _("Solution");
@@ -226,7 +228,9 @@ function directiveFunction() {
 				scope.concentration_txt = _("Concentration");
 				scope.reset_btn_txt = _("Reset");
 				scope.cuvette_length_txt = _("Cuvette Length = 1 cm");
-				scope.calculated_conctrn_txt = _("Calculated Concentration");
+				concentration_unit = "M";
+				scope.unit = concentration_unit;
+				scope.calculated_conctrn_txt = _("Calculated Concentration")+"("+concentration_unit+")";
 				scope.submit_btn_txt = _("Submit");
 				scope.correct_ans_txt = _("Correct Answer");
 				scope.result = _("Result");
@@ -271,6 +275,9 @@ function setText(name, textX, textY, value, color, fontSize, container) {
 	_text.name = name;
 	_text.text = value;
 	_text.color = color;
+	if ( name == "absorbance_transmittance_value" ) {
+		_text.mask = machine_value_display_rect;
+	}
 	container.addChild(_text); /** Adding text to the container */
 }
 
@@ -404,8 +411,10 @@ function machineOpenCloseFn(scope) {
         getChild("close_txt").visible = false;
         getChild("machine_close").visible = true;    	
     	getChild("machine_open").visible = false;
-    	getChild("machine_open_top").visible = false; 
-    	calculation(scope);	
+    	getChild("machine_open_top").visible = false;
+    	if ( solution_in_machine_flag ) {
+    		calculation(scope);
+    	}    		
     });            
 }
 
@@ -439,13 +448,15 @@ function wavelengthIncrease(scope) {
     getChild("switch_up_arrow").on("pressup", function() {   
         if ( wavelength >= 350 & wavelength < 700 ) {
             wavelength = wavelength+5;       
-            getChild("wavelength_value").text = wavelength;
-            calculation(scope); 
-            if ( absorbance_flag == true ) { /** If absorbance flag is true absorbance displays else transmittance displays */
-                getChild("absorbance_transmittance_value").text = absorbance+" A";
-            } else {
-                getChild("absorbance_transmittance_value").text = transmittance+" %T";
-            }
+            getChild("wavelength_value").text = wavelength+" nm";
+            if ( solution_in_machine_flag ) {
+            	calculation(scope); 
+	            if ( absorbance_flag == true ) { /** If absorbance flag is true absorbance displays else transmittance displays */
+	                getChild("absorbance_transmittance_value").text = absorbance+" A";
+	            } else {
+	                getChild("absorbance_transmittance_value").text = transmittance+" %T";
+	            }
+            }            
         }               
     });
 }
@@ -455,13 +466,15 @@ function wavelengthDecrease (scope) {
     getChild("switch_down_arrow").on("pressup", function() {
         if ( wavelength > 350 & wavelength <= 700 ) {
             wavelength = wavelength-5;
-            getChild("wavelength_value").text = wavelength;
-            calculation(scope);
-            if ( absorbance_flag == true ) { /** If absorbance flag is true absorbance displays else transmittance displays */
-                getChild("absorbance_transmittance_value").text = absorbance+" A";
-            } else {
-                getChild("absorbance_transmittance_value").text = transmittance+" %T";
-            }
+            getChild("wavelength_value").text = wavelength+" nm";
+            if ( solution_in_machine_flag ) {
+	            calculation(scope);
+	            if ( absorbance_flag == true ) { /** If absorbance flag is true absorbance displays else transmittance displays */
+	                getChild("absorbance_transmittance_value").text = absorbance+" A";
+	            } else {
+	                getChild("absorbance_transmittance_value").text = transmittance+" %T";
+	            }
+	        }
         }
     });    
 }
@@ -487,6 +500,7 @@ function mouseClickOfTube(scope, name) {
 	name.on("click", function(event) {
 		if ( open_flag ) {
 			scope.solution_disable = true;
+			scope.concentration_disable = true;
 			known_solution_rect.mouseEnabled = false;
 			unknown_solution_rect.mouseEnabled = false;
 			blank_rect.mouseEnabled = false;
@@ -534,7 +548,7 @@ function solutionInMachine(tube, solution, x_pos, y_pos) {
 function solutionTubeReturn(tube, solution, x_pos, y_pos) {
 	close_rect.mouseEnabled = true;
 	solution_in_machine_flag = true;
-    solution_tube_return_rect.mouseEnabled = true;    
+    solution_tube_return_rect.mouseEnabled = true;  
     solution_tube_return_rect.on("mousedown", function(event) { /** Tube return mouse down function */
         solution_tube_return_rect.mouseEnabled = false;
         getChild(tube).x = x_pos;
@@ -544,10 +558,12 @@ function solutionTubeReturn(tube, solution, x_pos, y_pos) {
 	        getChild(solution).y = y_pos+25;                                                                                           
 	    }
         known_solution_rect.mouseEnabled = true;
+        getChild("absorbance_transmittance_value").text = "0.00000 A";  
 		unknown_solution_rect.mouseEnabled = true;
 		blank_rect.mouseEnabled = true;
         known_solution_flag = false;
         unknown_solution_flag = false;
+        solution_in_machine_flag = false;
         blank_flag = false;
     });
 }

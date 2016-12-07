@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: d\n"
-"POT-Creation-Date: 2016-11-19 13:52+0530\n"
-"PO-Revision-Date: 2016-11-19 13:58+0530\n"
+"POT-Creation-Date: 2016-12-05 10:08+0530\n"
+"PO-Revision-Date: 2016-12-05 10:15+0530\n"
 "Last-Translator: \n"
 "Language-Team: d\n"
 "Language: hi\n"
@@ -53,46 +53,66 @@ msgstr "सबसे पहले समाधान है जो आप चा
 
 #: view.js:221
 msgid "help2"
-msgstr "फिर मशीन ऊपर खुला और मशीन में टेस्टट्यूब जगह है।"
+msgstr "स्लाइडर का उपयोग एकाग्रता का चयन करें।"
 
 #: view.js:221
 msgid "help3"
-msgstr "चुने गए ट्यूब समाधान ट्यूब जाना जाता है, एकाग्रता का चयन करें।"
+msgstr "तब स्पेक्ट्रोफोटोमीटर के ढक्कन खोलने के लिए और उस पर क्लिक करके खाली क्युवेट जगह है।"
 
 #: view.js:221
 msgid "help4"
-msgstr "फिर मशीन शीर्ष बंद करें।"
+msgstr "ढक्कन बंद कर दें।"
 
 #: view.js:221
 msgid "help5"
-msgstr "हम ऊपर तीर बटन का उपयोग तरंग दैर्ध्य बढ़ा सकते हैं।"
+msgstr "0 एबीएस 100% टी बटन पर क्लिक करें, साधन अब 0.00000 ए पढ़ता"
 
 #: view.js:221
 msgid "help6"
-msgstr "तरंग दैर्ध्य नीचे तीर बटन का उपयोग कर घटाएँ।"
+msgstr "ढक्कन खोलें और उस पर क्लिक करके खाली क्युवेट को हटा दें।"
 
 #: view.js:221
 msgid "help7"
-msgstr "हम तरंग दैर्ध्य के संबंध में मशीन में भी अब्सॉर्बन्स देख सकते हैं।"
+msgstr "तब स्पेक्ट्रोफोटोमीटर में ज्ञात एकाग्रता के साथ क्युवेट जगह है।"
 
 #: view.js:221
 msgid "help8"
-msgstr "ए / टी बटन बारी-बारी से अब्सॉर्बन्स और संप्रेषण को प्रदर्शित करता है।"
+msgstr "ढक्कन बंद करें और 350 एनएम और 700 एनएम के बीच अब्सॉर्बन्स के उपाय।"
 
 #: view.js:221
 msgid "help9"
-msgstr "चुने गए ट्यूब अज्ञात समाधान ट्यूब है, तो हम एकाग्रता की गणना करने के लिए है।"
+msgstr "हम वृद्धि / / नीचे तीर बटन का उपयोग कर तरंगदैर्ध्य घटा सकते हैं।"
 
 #: view.js:221
 msgid "help10"
-msgstr "तो गणना एकाग्रता पाठ बॉक्स पर टाइप करें और सबमिट करें।"
+msgstr "हम तरंग दैर्ध्य के लिए सम्मान के साथ मशीन में अब्सॉर्बन्स देख सकते हैं।"
 
 #: view.js:221
 msgid "help11"
-msgstr "चुने गए ट्यूब खाली ट्यूब है, तो मूलभूत मूल्यों को प्रदर्शित करता होगा।"
+msgstr "ए / टी बटन प्रदर्शित करता है अब्सॉर्बन्स और संप्रेषण बारी-बारी से।"
 
 #: view.js:221
 msgid "help12"
+msgstr "अधिकतम अब्सॉर्बन्स के लिए इसी मूल्य को तरंगदैर्ध्य सेट करें।"
+
+#: view.js:221
+msgid "help13"
+msgstr "ढक्कन खोलें और ज्ञात एकाग्रता के साथ क्युवेट को हटा दें।"
+
+#: view.js:221
+msgid "help14"
+msgstr "एक ही समाधान के साथ, लेकिन एक अज्ञात एकाग्रता में क्युवेट रखें।"
+
+#: view.js:221
+msgid "help15"
+msgstr "इस तरंग दैर्ध्य के लिए अब्सॉर्बन्स पढ़ें और अज्ञात समाधान की एकाग्रता की गणना।"
+
+#: view.js:221
+msgid "help16"
+msgstr "पाठ बॉक्स में मूल्य की गणना दर्ज करें और अपने परिणाम की जाँच करें।"
+
+#: view.js:221
+msgid "help17"
 msgstr "रीसेट बटन प्रयोग रीसेट करने के लिए है।"
 
 #: view.js:221
@@ -115,7 +135,7 @@ msgstr "चर"
 msgid "Solution"
 msgstr "सलूशन"
 
-#: view.js:225 view.js:236
+#: view.js:225 view.js:238
 msgid "Cobalt(II) Chloride"
 msgstr "कोबाल्ट(II) क्लोराइड"
 
@@ -131,43 +151,43 @@ msgstr "रीसेट"
 msgid "Cuvette Length = 1 cm"
 msgstr "क्युवेट की लंबाई = 1 से.मी"
 
-#: view.js:229
+#: view.js:231
 msgid "Calculated Concentration"
 msgstr "परिकलित एकाग्रता"
 
-#: view.js:230
+#: view.js:232
 msgid "Submit"
 msgstr "जमा करें"
 
-#: view.js:231
+#: view.js:233
 msgid "Correct Answer"
 msgstr "सही उत्तर"
 
-#: view.js:232
+#: view.js:234
 msgid "Result"
 msgstr "परिणाम"
 
-#: view.js:233
+#: view.js:235
 msgid "copyright"
 msgstr "कॉपीराइट © अमृता विश्वविद्यालय 2009 - 2015"
 
-#: view.js:239
+#: view.js:241
 msgid "Hexaaquacobalt(II) Ion"
 msgstr "हेसाकाकबलत(II) आयन"
 
-#: view.js:242
+#: view.js:244
 msgid "Ferrocene"
 msgstr "फरोसन"
 
-#: view.js:245
+#: view.js:247
 msgid "Crystal Violet"
 msgstr "क्रिस्टल वायलेट"
 
-#: view.js:248
+#: view.js:250
 msgid "Rose Bengal"
 msgstr "रोज बंगाल"
 
-#: view.js:251
+#: view.js:253
 msgid "Coumarin"
 msgstr "कौमारिन"
 

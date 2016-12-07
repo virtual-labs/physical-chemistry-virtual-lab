@@ -38,84 +38,119 @@
         $scope.showActionToast = function() {        
             var toast = $mdToast.simple()
             .content(help_array[0])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
         
             var toast1 = $mdToast.simple()
             .content(help_array[1])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 		  
             var toast2 = $mdToast.simple()
             .content(help_array[2])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
             
             var toast3 = $mdToast.simple()
             .content(help_array[3])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
             
             var toast4 = $mdToast.simple()
             .content(help_array[4])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());            
 
             var toast5 = $mdToast.simple()
             .content(help_array[5])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 
             var toast6 = $mdToast.simple()
             .content(help_array[6])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 
             var toast7 = $mdToast.simple()
             .content(help_array[7])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 
             var toast8 = $mdToast.simple()
             .content(help_array[8])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 
             var toast9 = $mdToast.simple()
             .content(help_array[9])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 
             var toast10 = $mdToast.simple()
             .content(help_array[10])
-            .action(help_array[12])
+            .action(help_array[17])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
 
             var toast11 = $mdToast.simple()
             .content(help_array[11])
-            .action(help_array[13])
+            .action(help_array[17])
+            .hideDelay(15000)
+            .highlightAction(false)
+            .position($scope.getToastPosition());
+
+            var toast12 = $mdToast.simple()
+            .content(help_array[12])
+            .action(help_array[17])
+            .hideDelay(15000)
+            .highlightAction(false)
+            .position($scope.getToastPosition());
+
+            var toast13 = $mdToast.simple()
+            .content(help_array[13])
+            .action(help_array[17])
+            .hideDelay(15000)
+            .highlightAction(false)
+            .position($scope.getToastPosition());
+
+            var toast14 = $mdToast.simple()
+            .content(help_array[14])
+            .action(help_array[17])
+            .hideDelay(15000)
+            .highlightAction(false)
+            .position($scope.getToastPosition());
+
+            var toast15 = $mdToast.simple()
+            .content(help_array[15])
+            .action(help_array[17])
+            .hideDelay(15000)
+            .highlightAction(false)
+            .position($scope.getToastPosition());
+
+            var toast16 = $mdToast.simple()
+            .content(help_array[16])
+            .action(help_array[18])
             .hideDelay(15000)
             .highlightAction(false)
             .position($scope.getToastPosition());
@@ -132,6 +167,16 @@
                                                 $mdToast.show(toast9).then(function() {
                                                     $mdToast.show(toast10).then(function() {
                                                         $mdToast.show(toast11).then(function() {
+                                                            $mdToast.show(toast12).then(function() {
+                                                                $mdToast.show(toast13).then(function() {
+                                                                    $mdToast.show(toast14).then(function() {
+                                                                        $mdToast.show(toast15).then(function() {
+                                                                            $mdToast.show(toast16).then(function() {
+                                                                            });
+                                                                        });
+                                                                    });
+                                                                });
+                                                            });
                                                         });
                                                     });
                                                 });
